@@ -1,0 +1,51 @@
+[
+  {
+    "title": "CCNA: Introduction to Networks",
+    "issuer": "Cisco Networking Academy",
+    "via": "มทร.พระนคร",
+    "category": "Networking",
+    "date": "2026-11-14",
+    "hours": null,
+    "image": "Certificates/ccna-intro-to-networks.jpg",
+    "pdf": "Certificates/ccna-intro-to-networks.pdf",
+    "description": "พื้นฐานเครือข่ายคอมพิวเตอร์ ครอบคลุมโครงสร้างและโปรโตคอลของเครือข่าย โมเดล OSI/TCP-IP การกำหนด IP Address และ Subnetting รวมถึงการตั้งค่า Switch และ Router เบื้องต้น",
+    "skills": [
+      "OSI/TCP-IP",
+      "IP Addressing",
+      "Subnetting",
+      "Cisco IOS"
+    ]
+  },
+  {
+    "title": "Simulink Fundamentals",
+    "issuer": "MathWorks",
+    "via": "Training Services",
+    "category": "Simulation",
+    "date": "2026-11-15",
+    "hours": 8,
+    "image": "Certificates/simulink-fundamentals.jpg",
+    "pdf": "Certificates/simulink-fundamentals.pdf",
+    "description": "หลักสูตรการสร้างแบบจำลองและจำลองระบบไดนามิกด้วย Simulink ตั้งแต่การสร้างโมเดลแบบ Block Diagram การจัดการสัญญาณ การทำ Subsystem ไปจนถึงการจำลองและวิเคราะห์ผลลัพธ์",
+    "skills": [
+      "Block Diagram",
+      "Signal Processing",
+      "Subsystem",
+      "Simulation"
+    ]
+  },
+  {
+    "title": "Simulink Onramp",
+    "issuer": "MathWorks",
+    "via": "Training Services",
+    "category": "Simulation",
+    "date": "2026-11-15",
+    "hours": 2,
+    "image": "Certificates/simulink-onramp.jpg",
+    "pdf": "Certificates/simulink-onramp.pdf",
+    "description": "คอร์สเริ่มต้นสำหรับ Simulink สอนการสร้างและรันโมเดลพื้นฐาน การเชื่อมต่อบล็อก และการดูผลสัญญาณ เหมาะเป็นพื้นฐานก่อนเรียนระดับ Fundamentals",
+    "skills": [
+      "Simulink Basics",
+      "Model Building"
+    ]
+  }
+]
