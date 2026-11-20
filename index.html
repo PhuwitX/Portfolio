@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- เนื้อหาทั้งหมดอยู่ใน site.json แล้ว script.js จะสร้างหน้านี้ให้ -->
+<!-- เนื้อหาทั้งหมดอยู่ใน site-data.js แล้ว script.js จะสร้างหน้านี้ให้ -->
 <header class="top">
 <div class="wrap nav">
 <span class="brand" id="brand">PHUWIT SRISUWOR</span>
@@ -25,16 +25,17 @@
 <section id="contact" class="contact" style="padding:0"></section>
 <footer id="footer"></footer>
 
-<div class="lightbox" id="lightbox" hidden><button class="close" aria-label="ปิด">×</button><img alt=""><a class="btn fill" target="_blank" rel="noopener noreferrer">เปิด PDF</a></div>
+<div class="lightbox" id="lightbox" hidden><button class="close" aria-label="ปิด">×</button><img alt=""><a class="btn fill" target="_blank" rel="noopener noreferrer" hidden>เปิด PDF</a></div>
 
 <noscript><p class="wrap muted" style="padding:24px 32px">ต้องเปิดใช้งาน JavaScript เพื่อแสดงเนื้อหาของเว็บไซต์นี้</p></noscript>
-<script src="script.js?v=3"></script>
+<script src="site-data.js?v=5"></script>
+<script src="script.js?v=5"></script>
 <script>
 /* ตรวจว่า script.js ทำงานหรือไม่ ถ้าไม่ จะบอกสาเหตุบนหน้าเว็บ */
 setTimeout(function(){
   if(window.__portfolioReady)return;
   var m=document.getElementById('main');
-  if(m)m.innerHTML='<div class="wrap" style="padding-top:56px"><p><b>เว็บโหลดไม่สำเร็จ</b> — script.js ไม่ทำงาน</p><ul><li>ตรวจว่าอัปโหลด <code>script.js</code> และ <code>site.json</code> ไว้โฟลเดอร์เดียวกับ index.html แล้ว</li><li>กด Ctrl+F5 เพื่อล้างแคช</li><li>กด F12 แล้วดูแท็บ Console / Network ว่ามี error หรือ 404 หรือไม่</li></ul></div>';
+  if(m)m.innerHTML='<div class="wrap" style="padding-top:56px"><p><b>เว็บโหลดไม่สำเร็จ</b> — script.js ไม่ทำงาน</p><ul><li>ตรวจว่าอัปโหลด <code>script.js</code> และ <code>site-data.js</code> ไว้โฟลเดอร์เดียวกับ index.html แล้ว</li><li>กด Ctrl+F5 เพื่อล้างแคช</li><li>กด F12 แล้วดูแท็บ Console / Network ว่ามี error หรือ 404 หรือไม่</li></ul></div>';
 },3000);
 </script>
 </body>

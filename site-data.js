@@ -1,0 +1,233 @@
+/* ข้อมูลทั้งหมดของเว็บอยู่ที่นี่ — แก้ข้อความ/โปรเจกต์/ใบรับรองได้เลย
+   (ต้องคงรูปแบบ JSON: ใส่ " ครอบ key และข้อความ, ไม่มี , ตัวสุดท้ายก่อน ] หรือ }) */
+window.SITE_DATA = {
+  "meta": {
+    "title": "ภูวิศ ศรีสุวอ | Portfolio",
+    "description": "Portfolio ของภูวิศ ศรีสุวอ นักศึกษาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร"
+  },
+  "profile": {
+    "brand": "PHUWIT SRISUWOR",
+    "eyebrow": "Portfolio",
+    "headline": [
+      "สวัสดี ผมภูวิศ",
+      "Computer Engineering Student"
+    ],
+    "subtitle": "นักศึกษาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร",
+    "photo": "Images/profile.jpg",
+    "photoAlt": "รูปถ่าย ภูวิศ ศรีสุวอ",
+    "buttons": [
+      {
+        "label": "ดูผลงาน",
+        "href": "#projects",
+        "style": "fill"
+      },
+      {
+        "label": "ติดต่อ",
+        "href": "#contact",
+        "style": "line"
+      }
+    ]
+  },
+  "nav": [
+    {
+      "label": "About",
+      "href": "#about"
+    },
+    {
+      "label": "Projects",
+      "href": "#projects"
+    },
+    {
+      "label": "Education",
+      "href": "#education"
+    },
+    {
+      "label": "Certificates",
+      "href": "#certificates"
+    },
+    {
+      "label": "Contact",
+      "href": "#contact"
+    }
+  ],
+  "about": {
+    "eyebrow": "About me",
+    "title": "เกี่ยวกับฉัน",
+    "text": "นักศึกษาวิศวกรรมคอมพิวเตอร์ที่มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร มีความสนใจด้านการพัฒนาเว็บไซต์ พัฒนาเกม และระบบอัตโนมัติ มีประสบการณ์ทำโปรเจกต์ทางการศึกษาด้วย PHP และ MySQL เน้นสร้างซอฟต์แวร์ที่ใช้งานได้จริง และพัฒนาทักษะทางเทคนิคอย่างต่อเนื่อง"
+  },
+  "skills": {
+    "eyebrow": "Skills",
+    "title": "ทักษะ",
+    "groups": [
+      {
+        "items": [
+          "JavaScript",
+          "PHP",
+          "Python",
+          "MySQL",
+          "HTML5 / CSS3",
+          "React.js",
+          "Node.js",
+          "GitHub",
+          "VS Code"
+        ]
+      },
+      {
+        "label": "Soft Skills",
+        "items": [
+          "Communication",
+          "Teamwork",
+          "Problem Solving",
+          "Time Management",
+          "Positive Attitude"
+        ]
+      },
+      {
+        "label": "Languages",
+        "items": [
+          "ไทย (เจ้าของภาษา)",
+          "English (Intermediate)"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "eyebrow": "Projects",
+    "title": "ผลงาน",
+    "items": [
+      {
+        "title": "Personal Portfolio Website",
+        "description": "เว็บไซต์ส่วนตัวสำหรับนำเสนอข้อมูลส่วนตัว ผลงาน ทักษะ และประวัติการศึกษา ออกแบบเป็นหน้าเดียวที่สะอาดและทันสมัย ประกอบด้วยส่วน About, Skills, Projects, Education และ Contact เขียนด้วย HTML และ CSS เองทั้งหมดโดยไม่ใช้เฟรมเวิร์ก",
+        "tech": "HTML, CSS",
+        "image": "Images/port.jpg",
+        "imageAlt": "หน้าจอเว็บ Personal Portfolio",
+        "links": [
+          {
+            "label": "Live Demo",
+            "url": "https://phuwitx.github.io/Portfolio/"
+          },
+          {
+            "label": "GitHub",
+            "url": "https://github.com/PhuwitX/Portfolio"
+          }
+        ]
+      },
+      {
+        "title": "Game Account Marketplace Website",
+        "description": "เว็บไซต์ขายบัญชีเกม ครอบคลุมการแสดงสินค้า การสั่งซื้อ และระบบชำระเงินจำลอง มีระบบ Login/Register และหลังบ้านสำหรับผู้ดูแลเพื่อจัดการเกม บัญชี คำสั่งซื้อ และสมาชิก (CRUD) พร้อมรายงานยอดขาย",
+        "tech": "PHP, MySQL, HTML, CSS, JavaScript",
+        "image": "Images/phuwitshop.jpg",
+        "imageAlt": "phuwitshop",
+        "links": [
+          {
+            "label": "Website",
+            "url": "https://phuwitshop.infinityfreeapp.com/index.php"
+          },
+          {
+            "label": "Demo",
+            "url": "https://testweb23.infinityfreeapp.com/index.php"
+          }
+        ]
+      }
+    ]
+  },
+  "education": {
+    "eyebrow": "Education",
+    "title": "การศึกษา",
+    "items": [
+      {
+        "years": "2024 – ปัจจุบัน",
+        "title": "คณะวิศวกรรมศาสตร์ | สาขาวิศวกรรมคอมพิวเตอร์",
+        "school": "มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร",
+        "gpax": "3.82"
+      },
+      {
+        "years": "2021 – 2023",
+        "title": "แผนการเรียนวิทยาศาสตร์-คณิตศาสตร์",
+        "school": "โรงเรียนสระแก้ว (Sakaeo School)",
+        "gpax": "3.31"
+      }
+    ]
+  },
+  "certificates": {
+    "eyebrow": "Certificates",
+    "title": "ใบรับรอง",
+    "items": [
+      {
+        "title": "CCNA: Introduction to Networks",
+        "issuer": "Cisco Networking Academy",
+        "via": "มทร.พระนคร",
+        "category": "Networking",
+        "date": "2026-11-14",
+        "hours": null,
+        "image": "Certificates/ccna-intro-to-networks.jpg",
+        "pdf": "Certificates/ccna-intro-to-networks.pdf",
+        "description": "พื้นฐานเครือข่ายคอมพิวเตอร์ ครอบคลุมโครงสร้างและโปรโตคอลของเครือข่าย โมเดล OSI/TCP-IP การกำหนด IP Address และ Subnetting รวมถึงการตั้งค่า Switch และ Router เบื้องต้น",
+        "skills": [
+          "OSI/TCP-IP",
+          "IP Addressing",
+          "Subnetting",
+          "Cisco IOS"
+        ]
+      },
+      {
+        "title": "Simulink Fundamentals",
+        "issuer": "MathWorks",
+        "via": "Training Services",
+        "category": "Simulation",
+        "date": "2026-11-15",
+        "hours": 8,
+        "image": "Certificates/simulink-fundamentals.jpg",
+        "pdf": "Certificates/simulink-fundamentals.pdf",
+        "description": "หลักสูตรการสร้างแบบจำลองและจำลองระบบไดนามิกด้วย Simulink ตั้งแต่การสร้างโมเดลแบบ Block Diagram การจัดการสัญญาณ การทำ Subsystem ไปจนถึงการจำลองและวิเคราะห์ผลลัพธ์",
+        "skills": [
+          "Block Diagram",
+          "Signal Processing",
+          "Subsystem",
+          "Simulation"
+        ]
+      },
+      {
+        "title": "Simulink Onramp",
+        "issuer": "MathWorks",
+        "via": "Training Services",
+        "category": "Simulation",
+        "date": "2026-11-15",
+        "hours": 2,
+        "image": "Certificates/simulink-onramp.jpg",
+        "pdf": "Certificates/simulink-onramp.pdf",
+        "description": "คอร์สเริ่มต้นสำหรับ Simulink สอนการสร้างและรันโมเดลพื้นฐาน การเชื่อมต่อบล็อก และการดูผลสัญญาณ เหมาะเป็นพื้นฐานก่อนเรียนระดับ Fundamentals",
+        "skills": [
+          "Simulink Basics",
+          "Model Building"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "มาร่วมงานกันนะ",
+    "text": "สนใจร่วมงานหรือพูดคุยเรื่องโปรเจกต์ ติดต่อได้ตามช่องทางด้านข้างเลย",
+    "links": [
+      {
+        "label": "phuwit.sri@gmail.com",
+        "href": "mailto:phuwit.sri@gmail.com"
+      },
+      {
+        "label": "098-263-2481",
+        "href": "tel:+66982632481"
+      },
+      {
+        "label": "GitHub: github.com/PhuwitX",
+        "href": "https://github.com/PhuwitX",
+        "external": true
+      },
+      {
+        "label": "Portfolio: phuwitx.github.io/Portfolio",
+        "href": "https://phuwitx.github.io/Portfolio/",
+        "external": true
+      }
+    ]
+  },
+  "footer": "© 2026 ภูวิศ ศรีสุวอ"
+};
