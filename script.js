@@ -1,5 +1,6 @@
 /* สร้างทั้งหน้าจาก site.json — แก้เนื้อหาที่ site.json ไม่ต้องแตะไฟล์นี้ */
 (function(){
+window.__portfolioReady=true;
 var $=function(id){return document.getElementById(id)};
 function esc(s){var e=document.createElement('div');e.textContent=s==null?'':s;return e.innerHTML}
 function ext(u){return /^https?:/.test(u)?' target="_blank" rel="noopener noreferrer"':''}
@@ -65,7 +66,7 @@ function certs(items){
   rf();rg();
 }
 
-fetch('site.json').then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){
+fetch('site.json?v=3',{cache:'no-cache'}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){
   document.title=d.meta.title;
   var m=document.querySelector('meta[name=description]');if(m)m.content=d.meta.description;
   $('nav').innerHTML=d.nav.map(function(n){return '<a href="'+esc(n.href)+'">'+esc(n.label)+'</a>'}).join('');
@@ -75,7 +76,8 @@ fetch('site.json').then(function(r){if(!r.ok)throw 0;return r.json()}).then(func
   contact(d.contact);
   $('footer').textContent=d.footer;
   if(location.hash){var t=document.querySelector(location.hash);if(t)t.scrollIntoView()}
-}).catch(function(){
-  $('main').innerHTML='<p class="wrap muted" style="padding-top:56px">โหลดข้อมูลไม่สำเร็จ (หากเปิดไฟล์โดยตรง ให้รันผ่าน local server หรือ GitHub Pages)</p>';
+}).catch(function(err){
+  console.error('Portfolio load error:',err);
+  $('main').innerHTML='<div class="wrap" style="padding-top:56px"><p><b>โหลดข้อมูลไม่สำเร็จ</b></p><ul><li>หากดับเบิลคลิกเปิดไฟล์ตรงๆ ให้รันผ่าน local server (python -m http.server) หรือ GitHub Pages</li><li>ตรวจว่ามีไฟล์ <code>site.json</code> อยู่โฟลเดอร์เดียวกับ index.html</li></ul></div>';
 });
 })();
