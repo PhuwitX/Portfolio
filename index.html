@@ -11,138 +11,23 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<!-- เนื้อหาทั้งหมดอยู่ใน site.json แล้ว script.js จะสร้างหน้านี้ให้ -->
 <header class="top">
 <div class="wrap nav">
-<span class="brand">PHUWIT SRISUWOR</span>
-<nav class="links" aria-label="เมนูหลัก">
-<a href="#about">About</a>
-<a href="#projects">Projects</a>
-<a href="#education">Education</a>
-<a href="#certificates">Certificates</a>
-<a href="#contact">Contact</a>
-</nav>
+<span class="brand" id="brand">PHUWIT SRISUWOR</span>
+<nav class="links" id="nav" aria-label="เมนูหลัก"></nav>
 </div>
-<div class="wrap hero">
-<div class="txt">
-<div class="eyebrow">Portfolio</div>
-<h1>สวัสดี ผมภูวิศ<br>Computer Engineering Student</h1>
-<p>นักศึกษาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร</p>
-<div class="btns">
-<a class="btn fill" href="#projects">ดูผลงาน</a>
-<a class="btn line" href="#contact">ติดต่อ</a>
-</div>
-</div>
-<!-- ใส่รูปจริง: ลบ div.photo ด้านล่าง แล้วใช้ <div class="photo"><img src="photo.jpg" alt="รูปถ่าย ภูวิศ ศรีสุวอ"></div> -->
-<div class="photo"><img src="Images/profile.jpg" alt="รูปถ่าย ภูวิศ ศรีสุวอ">
-</div>
+<div class="wrap hero" id="hero"></div>
 </header>
 
-<main>
-<section id="about">
-<div class="wrap two">
-<div>
-<div class="eyebrow">About me</div>
-<h2>เกี่ยวกับฉัน</h2>
-<p style="margin:0">นักศึกษาวิศวกรรมคอมพิวเตอร์ที่มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร มีความสนใจด้านการพัฒนาเว็บไซต์ พัฒนาเกม และระบบอัตโนมัติ มีประสบการณ์ทำโปรเจกต์ทางการศึกษาด้วย PHP และ MySQL เน้นสร้างซอฟต์แวร์ที่ใช้งานได้จริง และพัฒนาทักษะทางเทคนิคอย่างต่อเนื่อง</p>
-</div>
-<div>
-<div class="eyebrow">Skills</div>
-<h2>ทักษะ</h2>
-<div class="chips">
-<span>JavaScript</span><span>PHP</span><span>Python</span><span>MySQL</span><span>HTML5 / CSS3</span><span>React.js</span><span>Node.js</span><span>GitHub</span><span>VS Code</span>
-</div>
-<div class="eyebrow" style="margin-top:24px">Soft Skills</div>
-<div class="chips" style="margin-top:10px">
-<span>Communication</span><span>Teamwork</span><span>Problem Solving</span><span>Time Management</span><span>Positive Attitude</span>
-</div>
-<div class="eyebrow" style="margin-top:24px">Languages</div>
-<div class="chips" style="margin-top:10px">
-<span>ไทย (เจ้าของภาษา)</span><span>English (Intermediate)</span>
-</div>
-</div>
-</div>
-</section>
+<main id="main"><p class="wrap muted" style="padding-top:56px">กำลังโหลด...</p></main>
 
-<section id="projects">
-<div class="wrap">
-<div class="eyebrow">Projects</div>
-<h2>ผลงาน</h2>
-<div class="grid">
+<section id="contact" class="contact" style="padding:0"></section>
+<footer id="footer"></footer>
 
-<article class="card">
-<div class="shot"><img src="Images/port.jpg" alt="หน้าจอเว็บ Personal Portfolio"></div>
-<div class="body">
-<h3>Personal Portfolio Website</h3>
-<p>เว็บไซต์ส่วนตัวสำหรับนำเสนอข้อมูลส่วนตัว ผลงาน ทักษะ และประวัติการศึกษา ออกแบบเป็นหน้าเดียวที่สะอาดและทันสมัย ประกอบด้วยส่วน About, Skills, Projects, Education และ Contact เขียนด้วย HTML และ CSS เองทั้งหมดโดยไม่ใช้เฟรมเวิร์ก</p>
-<div class="tech"><b>Tech:</b> HTML, CSS</div>
-<div class="links"><a href="https://phuwitx.github.io/Portfolio/" target="_blank" rel="noopener noreferrer">Live Demo →</a><a href="https://github.com/PhuwitX/Portfolio" target="_blank" rel="noopener noreferrer">GitHub →</a></div>
-</div>
-</article>
-
-<article class="card">
-<div class="shot"><img src="Images/phuwitshop.jpg" alt="phuwitshop"></div>
-<div class="body">
-<h3>Game Account Marketplace Website</h3>
-<p>เว็บไซต์ขายบัญชีเกม ครอบคลุมการแสดงสินค้า การสั่งซื้อ และระบบชำระเงินจำลอง มีระบบ Login/Register และหลังบ้านสำหรับผู้ดูแลเพื่อจัดการเกม บัญชี คำสั่งซื้อ และสมาชิก (CRUD) พร้อมรายงานยอดขาย</p>
-<div class="tech"><b>Tech:</b> PHP, MySQL, HTML, CSS, JavaScript</div>
-<div class="links"><a href="https://phuwitshop.infinityfreeapp.com/index.php" target="_blank" rel="noopener noreferrer">Website →</a></a><a href="https://testweb23.infinityfreeapp.com/index.php" target="_blank" rel="noopener noreferrer">Demo →</a></div>
-</div>
-</article>
-
-</div>
-</div>
-</section>
-
-<section id="education">
-<div class="wrap">
-<div class="eyebrow">Education</div>
-<h2>การศึกษา</h2>
-<div class="grid">
-<div class="edu">
-<div class="yr">2024 – ปัจจุบัน</div>
-<div class="t">คณะวิศวกรรมศาสตร์ | สาขาวิศวกรรมคอมพิวเตอร์</div>
-<div>มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร</div>
-<div style="font-weight:600">GPAX: 3.82</div>
-</div>
-<div class="edu">
-<div class="yr">2021 – 2023</div>
-<div class="t">แผนการเรียนวิทยาศาสตร์-คณิตศาสตร์</div>
-<div>โรงเรียนสระแก้ว (Sakaeo School)</div>
-<div style="font-weight:600">GPAX: 3.31</div>
-</div>
-</div>
-</div>
-</section>
-<section id="certificates">
-<div class="wrap">
-<div class="eyebrow">Certificates</div>
-<h2>ใบรับรอง</h2>
-<div class="filters" id="certFilters" role="group" aria-label="กรองใบรับรอง"></div>
-<div class="grid" id="certGrid"><p class="muted">กำลังโหลด...</p></div>
-</div>
-</section>
-
-</main>
-
-<section id="contact" class="contact" style="padding:0">
-<div class="wrap">
-<div class="l">
-<div class="eyebrow">Contact</div>
-<h2>มาร่วมงานกันนะ</h2>
-<p>สนใจร่วมงานหรือพูดคุยเรื่องโปรเจกต์ ติดต่อได้ตามช่องทางด้านข้างเลย</p>
-</div>
-<div class="r">
-<a href="mailto:phuwit.sri@gmail.com">phuwit.sri@gmail.com</a>
-<a href="tel:+66982632481">098-263-2481</a>
-<a href="https://github.com/PhuwitX" target="_blank" rel="noopener noreferrer">GitHub: github.com/PhuwitX</a>
-<a href="https://phuwitx.github.io/Portfolio/" target="_blank" rel="noopener noreferrer">Portfolio: phuwitx.github.io/Portfolio</a>
-</div>
-</div>
-</section>
 <div class="lightbox" id="lightbox" hidden><button class="close" aria-label="ปิด">×</button><img alt=""><a class="btn fill" target="_blank" rel="noopener noreferrer">เปิด PDF</a></div>
-<footer>© 2026 ภูวิศ ศรีสุวอ</footer>
 
+<noscript><p class="wrap muted" style="padding:24px 32px">ต้องเปิดใช้งาน JavaScript เพื่อแสดงเนื้อหาของเว็บไซต์นี้</p></noscript>
 <script src="script.js"></script>
 </body>
 </html>
